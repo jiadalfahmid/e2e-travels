@@ -39,6 +39,14 @@ document.getElementById("couponInput").addEventListener("input", function () {
 });
 
 couponBtn.addEventListener('click', function(){
-  document.getElementById('couponField').innerHTML = ``
+  if(couponInput.value === "NEW50"){
+    discount = totalAmount
+    document.getElementById('new15CoupnApplied').classList.remove('hidden')
+    document.getElementById('couponField').innerHTML = `<div class="flex justify-between"><div class="font-medium">Total Price</div><div class="font-medium">BDT <span id="totalPrice">${discount}</span></div></div>`;
+  }
+    totalAmount
+  }else{
+    document.getElementById('couple20CoupnApplied').classList.remove('hidden')
+  }
 
-})
+)
